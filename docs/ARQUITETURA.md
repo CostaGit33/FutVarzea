@@ -47,6 +47,27 @@ Esta é estrutura-alvo documental, não afirma que os módulos já estejam imple
 
 Módulo independente do registro estatístico. Apenas avaliadores ativos podem lançar notas. Armazenar versão da ficha, dimensões, justificativa, autoria, data e contexto. Proibir autoavaliação e edição silenciosa de avaliações submetidas.
 
+## Quadro de avaliadores (`committee` + `fixed`)
+
+Parâmetros de governança, versionados em configuração e não presumidos no código:
+
+| Parâmetro | Valor | Efeito arquitetural |
+|---|---|---|
+| `max_evaluators` | 15 | Limite de avaliadores ativos autorizados. |
+| `approval_mode` | `committee` | Aprovação por comissão administrativa; sem aprovação automática. |
+| `vacancy_policy` | `fixed` | Sem reposição automática; abrir vaga exige autorização administrativa registrada. |
+
+Requisitos de implementação:
+
+- Candidatura não concede permissão; somente estado Aprovada, com autorização ativa e vaga contabilizada, permite avaliar.
+- A contagem de 15 ativos é garantida no banco/transação (inclusive sob concorrência); nunca existe a 16ª autorização ativa.
+- Suspensão, revogação, abertura de vaga e substituição geram eventos de auditoria com responsável, data/hora e motivo; revogar ou suspender não promove outro candidato.
+- A decisão da comissão registra pareceres/votos e impedimentos declarados. Quórum, método de votação e desempate permanecem em aberto até deliberação.
+- Notas individuais e divergências entre avaliadores são preservadas; a consolidação não apaga avaliações.
+- Testes obrigatórios: bloqueio da 16ª autorização em concorrência e bloqueio de avaliação por candidato, rejeitado, suspenso ou revogado.
+
+Detalhes em [REGRAS-AVALIADORES.md](REGRAS-AVALIADORES.md).
+
 ## Dados e segurança
 
 - Banco relacional com integridade referencial e migrações versionadas.

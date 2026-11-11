@@ -31,6 +31,10 @@ Detectar atleta duplicado, gols incompatíveis com resultado, goleiro sem partic
 
 Ações relevantes registram ator, papel, data/hora, entidade, operação, valores anterior/novo e justificativa. Registros não devem ser editáveis por usuários comuns.
 
+### Eventos do quadro de avaliadores
+
+Auditar candidatura enviada, deliberação da comissão (pareceres/votos e impedimentos), aprovação, rejeição, abertura de vaga, concessão de autorização, suspensão, revogação e substituição. A contagem de 15 avaliadores ativos deve ser verificável a partir desses registros.
+
 ## Privacidade
 
 Publicar apenas dados necessários. Não expor telefone pessoal ou endereço residencial por padrão. Imagens, perfis públicos e dados identificáveis de menores dependem das autorizações e salvaguardas legais aplicáveis.
