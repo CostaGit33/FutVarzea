@@ -160,8 +160,7 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'A várzea tem
-história. E tem números.',
+                'A várzea tem história. E tem números.',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 25,
