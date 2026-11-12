@@ -36,6 +36,9 @@ jobs:
       - name: Flutter version
         run: flutter --version
 
+      - name: Generate Android platform files
+        run: flutter create --platforms=android --org br.com.futvarzea --project-name futvarzea .
+
       - name: Get dependencies
         run: flutter pub get
 
