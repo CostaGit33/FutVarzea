@@ -36,6 +36,12 @@ A decisão de aprovar/rejeitar pertence à comissão administrativa, não a apro
 - Substituição só termina após candidatura e aprovação pela comissão.
 - Backend/banco deve bloquear transações que ultrapassem 15 ativos, inclusive sob concorrência.
 
+## Participação no Jogador em Destaque Municipal
+
+Para que um atleta seja elegível ao destaque mensal, são necessárias pelo menos **5 avaliações técnicas independentes** no período, provenientes de cinco avaliadores distintos. Cada avaliador pode fornecer no máximo uma avaliação válida por atleta em cada edição mensal; correções versionam a avaliação existente e não contam como nova avaliação. Avaliações de contas suspensas/revogadas, duplicadas, incompletas, em autoavaliação ou com conflito de interesse não contam para o mínimo.
+
+As avaliações devem ser registradas dentro do mês de referência e conter contexto esportivo, ficha/versionamento, notas e justificativas. O sistema preserva autoria e histórico. A regra completa de apuração, homologação e publicação está em [REGULAMENTO-DESTAQUE-MUNICIPAL.md](REGULAMENTO-DESTAQUE-MUNICIPAL.md).
+
 ## Permissões
 
 Consultar dados esportivos necessários; registrar avaliações técnicas; avaliar jogadores e goleiros com fichas apropriadas; justificar notas; consultar o próprio histórico.
