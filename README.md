@@ -30,6 +30,7 @@ Consulte [Regras dos avaliadores](docs/REGRAS-AVALIADORES.md).
 
 - [Visão geral](docs/VISAO-GERAL.md)
 - [Autenticação e sessões](docs/AUTENTICACAO.md)
+- [Perfis e permissões](docs/PERFIS-E-PERMISSOES.md)
 - [Arquitetura](docs/ARQUITETURA.md)
 - [Validação e auditoria](docs/REGRAS-VALIDACAO-E-AUDITORIA.md)
 - [Regras dos avaliadores](docs/REGRAS-AVALIADORES.md)
