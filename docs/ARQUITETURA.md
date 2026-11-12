@@ -84,4 +84,6 @@ Integrações externas isoladas por adaptadores. FutPontos é integração futur
 
 ## Decisões em aberto
 
-Tecnologia final de backend/frontend, provedor de mapas, autenticação, retenção de dados, quórum da comissão e fórmulas oficiais de ranking precisam ser definidos antes da implementação correspondente.
+Definido: backend em Node.js/Express com PostgreSQL; autenticação conforme [AUTENTICACAO.md](AUTENTICACAO.md).
+
+Ainda em aberto: tecnologia do frontend, provedor de mapas, retenção de dados, quórum da comissão e fórmulas oficiais de ranking, que precisam ser definidos antes da implementação correspondente.

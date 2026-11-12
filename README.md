@@ -29,10 +29,22 @@ Consulte [Regras dos avaliadores](docs/REGRAS-AVALIADORES.md).
 ## Documentação
 
 - [Visão geral](docs/VISAO-GERAL.md)
+- [Autenticação e sessões](docs/AUTENTICACAO.md)
 - [Arquitetura](docs/ARQUITETURA.md)
 - [Validação e auditoria](docs/REGRAS-VALIDACAO-E-AUDITORIA.md)
 - [Regras dos avaliadores](docs/REGRAS-AVALIADORES.md)
 - [Sistema de rankings](docs/SISTEMA-RANKINGS.md)
+
+## Executar o backend
+
+```bash
+cd backend
+npm ci
+npm run migrate
+npm test
+```
+
+Detalhes, variáveis de ambiente e criação do primeiro administrador em [Autenticação e sessões](docs/AUTENTICACAO.md).
 
 ## Princípios
 
@@ -44,4 +56,4 @@ Consulte [Regras dos avaliadores](docs/REGRAS-AVALIADORES.md).
 
 ## Estado do projeto
 
-Esta documentação estabelece a fundação funcional e de governança. Implementações, integrações e regras ainda não especificadas dependem de definição e aprovação.
+Documentação de fundação e governança, mais a primeira parte do backend: autenticação (cadastro, login, sessões e papéis). Módulos de atletas, babas, times, torneios, partidas, avaliadores e rankings ainda não foram implementados. Regras ainda não especificadas dependem de definição e aprovação.
