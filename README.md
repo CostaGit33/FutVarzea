@@ -24,7 +24,14 @@ Reúne informações sobre babas, times, atletas, torneios e partidas, com valid
 - Somente avaliadores aprovados e ativos podem registrar avaliações.
 - Toda avaliação e alteração deve registrar autoria, data/hora e justificativa.
 
-Consulte [Regras dos avaliadores](docs/REGRAS-AVALIADORES.md).
+Consulte [Regras dos avaliadores](docs/REGRAS-AVALIADORES.md) e o [Regulamento do Jogador em Destaque Municipal](docs/REGULAMENTO-DESTAQUE-MUNICIPAL.md).
+
+## Jogador em Destaque Municipal
+
+- Apuração mensal.
+- Mínimo de cinco avaliações técnicas independentes, feitas por cinco avaliadores distintos.
+- Resultado provisório submetido à homologação administrativa antes da publicação.
+- Fórmula e pesos oficiais dependem de aprovação e versionamento; não há fórmula presumida.
 
 ## Documentação
 
@@ -35,6 +42,7 @@ Consulte [Regras dos avaliadores](docs/REGRAS-AVALIADORES.md).
 - [Validação e auditoria](docs/REGRAS-VALIDACAO-E-AUDITORIA.md)
 - [Regras dos avaliadores](docs/REGRAS-AVALIADORES.md)
 - [Sistema de rankings](docs/SISTEMA-RANKINGS.md)
+- [Regulamento do Destaque Municipal](docs/REGULAMENTO-DESTAQUE-MUNICIPAL.md)
 
 ## Executar o backend
 
