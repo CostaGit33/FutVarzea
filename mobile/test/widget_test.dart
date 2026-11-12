@@ -16,16 +16,39 @@ void main() {
   });
 
   testWidgets('exibe os perfis e abre detalhes do avaliador', (tester) async {
+    await tester.view.setPhysicalSize(const Size(1080, 2400));
+    await tester.view.setDevicePixelRatio(1);
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+
     await tester.pumpWidget(const FutVarzeaApp());
     await tester.tap(find.text('Perfil'));
     await tester.pumpAndSettle();
-    expect(find.text('Jogador / atleta'), findsOneWidget);
-    expect(find.text('Administrador de time'), findsOneWidget);
-    expect(find.text('Responsável por baba'), findsOneWidget);
-    expect(find.text('Organizador de torneio'), findsOneWidget);
+
+    for (final label in [
+      'Jogador / atleta',
+      'Avaliador',
+      'Administrador de time',
+      'Responsável por baba',
+      'Organizador de torneio',
+      'Administrador da plataforma',
+    ]) {
+      await tester.scrollUntilVisible(
+        find.text(label),
+        300,
+        scrollable: find.byType(Scrollable).last,
+      );
+      expect(find.text(label), findsOneWidget);
+    }
+
+    await tester.scrollUntilVisible(
+      find.text('Avaliador'),
+      300,
+      scrollable: find.byType(Scrollable).last,
+    );
     await tester.tap(find.text('Avaliador'));
     await tester.pumpAndSettle();
-    expect(find.text('Exige candidatura e aprovação'), findsNothing);
+    expect(find.text('Permissões previstas'), findsOneWidget);
     expect(find.textContaining('15 avaliadores ativos'), findsOneWidget);
   });
 }
