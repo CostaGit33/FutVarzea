@@ -25,6 +25,9 @@ Cadastro ou autodeclaração não concede permissão administrativa.
 - Avaliações devem conter autoria, data/hora, ficha, notas e justificativas.
 - Não pode avaliar a si próprio, aprovar a própria candidatura ou alterar estatísticas oficiais de partidas.
 - Suspensão, revogação e substituição são auditadas; substituição exige autorização administrativa.
+- Para concorrer ao Jogador em Destaque Municipal mensal, o atleta precisa de pelo menos cinco avaliações válidas no mês, feitas por cinco avaliadores distintos.
+- Cada avaliador pode registrar no máximo uma avaliação válida por atleta em cada edição mensal; correções versionam o registro original.
+- A publicação do resultado depende de homologação administrativa; avaliadores não homologam o próprio resultado.
 
 ### 3. Administrador de time
 
