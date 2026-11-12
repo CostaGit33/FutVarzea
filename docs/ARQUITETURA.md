@@ -68,6 +68,10 @@ Requisitos de implementação:
 
 Detalhes em [REGRAS-AVALIADORES.md](REGRAS-AVALIADORES.md).
 
+## Destaque municipal mensal
+
+O domínio de rankings inclui a edição mensal do Jogador em Destaque Municipal, regida por [REGULAMENTO-DESTAQUE-MUNICIPAL.md](REGULAMENTO-DESTAQUE-MUNICIPAL.md). Cada atleta precisa de avaliações válidas de pelo menos cinco avaliadores distintos no mês. O cálculo gera resultado provisório; a publicação depende de homologação por administrador autorizado. O backend deve validar a independência das avaliações, congelar o conjunto de dados no fechamento, versionar o cálculo e impedir publicação sem homologação. Homologação valida o processo, mas não permite alterar notas técnicas ou estatísticas.
+
 ## Dados e segurança
 
 - Banco relacional com integridade referencial e migrações versionadas.
