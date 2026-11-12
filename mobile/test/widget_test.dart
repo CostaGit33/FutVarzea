@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:futvarzea/main.dart';
 
@@ -16,8 +17,8 @@ void main() {
   });
 
   testWidgets('exibe os perfis e abre detalhes do avaliador', (tester) async {
-    await tester.view.setPhysicalSize(const Size(1080, 2400));
-    await tester.view.setDevicePixelRatio(1);
+    tester.view.physicalSize = const Size(1080, 2400);
+    tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
 
